@@ -1,0 +1,125 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ink: #1a1818;
+  --color-ink-2: #211e1e;
+  --color-ink-3: #2a2626;
+  --color-bone: #ede6dc;
+  --color-mute: #9a928a;
+  --color-dim: #6b645e;
+  --color-ember: #ff5a36;
+  --color-line: rgb(237 230 220 / 0.12);
+
+  --font-sans: 'Onest Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'EB Garamond', ui-serif, Georgia, serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-pulse-dot: pulse-dot 2s ease-in-out infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 0 0 rgb(127 214 140 / 0.6); }
+    50% { box-shadow: 0 0 0 6px rgb(127 214 140 / 0); }
+  }
+}
+
+@layer base {
+  /* Light theme, switched by the pull-cord lamp in the hero. Dark stays the default. */
+  :root[data-theme='light'] {
+    --color-ink: #efebe6;
+    --color-ink-2: #e5dfd7;
+    --color-ink-3: #d9d2c8;
+    --color-bone: #1a1818;
+    --color-mute: #5e5852;
+    --color-dim: #8a847d;
+    --color-line: rgb(26 24 24 / 0.14);
+    color-scheme: light;
+  }
+  body {
+    transition: background-color 0.6s ease, color 0.6s ease;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    color-scheme: dark;
+    overflow-x: clip;
+  }
+  body {
+    background: var(--color-ink);
+    color: var(--color-bone);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+  }
+  ::selection {
+    background: var(--color-ember);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ember);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  @media (pointer: fine) {
+    body.has-cursor, body.has-cursor a, body.has-cursor button { cursor: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-mute);
+  }
+  .display {
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+  }
+  .serif-accent {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+  }
+  .holo {
+    background: conic-gradient(from var(--holo-angle, 0deg) at 50% 50%,
+      rgb(255 90 54 / 0.0), rgb(255 140 90 / 0.22), rgb(120 220 200 / 0.2),
+      rgb(150 140 255 / 0.22), rgb(255 200 120 / 0.2), rgb(255 90 54 / 0.0));
+    mix-blend-mode: color-dodge;
+  }
+  .wrap {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-inline: clamp(16px, 4vw, 48px);
+  }
+  .grain::after {
+    content: '';
+    position: fixed;
+    inset: -50%;
+    pointer-events: none;
+    z-index: 60;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+}
