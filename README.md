@@ -1,140 +1,241 @@
 <div align="center">
 
-# Hey, I'm Rahil Shah 👋
+# Rahil Shah — Personal Portfolio
 
-### AI & Data Science Student | Developer | Technology Enthusiast
+### A Modern Developer Portfolio Website
 
-Building solutions through code, data, and creativity.
+A personal portfolio showcasing my projects, technical skills, journey, and experience.
 
 <br/>
 
-<a href="https://github.com/Rahilshah2234">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-<a href="YOUR_LINKEDIN_URL">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="mailto:YOUR_EMAIL">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-Frontend%20Build-646CFF?style=flat-square&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
-<br/><br/>
+<br/>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=2&section=header" width="100%"/>
+**Designed & Developed by [Rahil Shah](https://github.com/Rahilshah2234)**
 
 </div>
 
-## 👨‍💻 About Me
+---
 
-I'm **Rahil Shah**, a final-year Artificial Intelligence & Data Science engineering student at **K.K. Wagh Institute of Engineering Education & Research, Nashik**.
+## 📌 Overview
 
-I'm passionate about exploring technology, developing practical solutions, and continuously improving my technical skills.
+This repository contains the source code of my personal developer portfolio website.
 
-- 🎓 Pursuing B.E. in Artificial Intelligence & Data Science.
-- 💻 Interested in Software Development and Web Technologies.
-- 🤖 Exploring Artificial Intelligence and Machine Learning.
-- 📊 Interested in Data Science and Analytics.
-- 🚀 Enjoy building projects and learning new technologies.
-- 🌱 Always curious about what's next in technology.
+The website is designed to present my technical background, featured projects, skills, and development journey through an interactive and visually engaging experience.
+
+The design follows a modern, minimal, dark aesthetic with smooth animations, interactive elements, and a carefully selected typography system.
+
+## ✨ Features
+
+- **Hero Section** – Introduction with animated text and social links.
+- **About Me** – Personal introduction and background.
+- **My Journey** – Timeline highlighting my academic and technical journey.
+- **Projects Showcase** – Dedicated project presentations and details.
+- **Skills & Technologies** – Organized technical skills and tools.
+- **Certifications** – Display of certifications and learning achievements.
+- **Beyond the Code** – Personal interests and activities.
+- **Contact Section** – Ways to connect and get in touch.
+- **Interactive UI** – Custom cursor effects, hover interactions, transitions, and animations.
+- **Responsive Design** – Adaptable layout for different screen sizes.
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Programming Languages
-<p>
-  <img src="https://skillicons.dev/icons?i=python,cpp,c,js,ts" />
-</p>
+The website is built using the following technologies:
 
-### Web Development
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,react,nextjs,tailwind,bootstrap" />
-</p>
+| Technology | Purpose |
+|---|---|
+| React 19 | Component-based UI development |
+| TypeScript | Type-safe JavaScript development |
+| Vite | Fast development server and build tool |
+| Tailwind CSS v4 | Utility-first styling |
+| CSS | Custom styling, animations and transitions |
+| HTML5 | Website structure |
 
-### Databases & Backend
-<p>
-  <img src="https://skillicons.dev/icons?i=mysql,mongodb,firebase,supabase,php,nodejs" />
-</p>
+### Development Tools
 
-### Tools & Platforms
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,androidstudio,postman" />
-</p>
+- **Visual Studio Code** – Code editor.
+- **Git** – Version control.
+- **GitHub** – Source code management.
+- **npm** – Package management.
 
 ---
 
-## 🚀 Featured Projects
+## 🎨 Design & Development
 
-### 🌱 Carbonomics AI
-An AI-driven carbon accounting and sustainability platform designed to calculate emissions, forecast carbon footprints, and explore decarbonization strategies.
+### Visual Design
 
-**Focus:** AI | Machine Learning | Carbon Accounting | Data Analytics
+The website uses a dark graphite visual theme with Electric Blue (`#4D8DFF`) as its primary accent color.
 
-### 🏨 HostelHub
-A web-based Hostel Management System designed to simplify hostel operations, student registration, room allocation, fee management, and complaint handling.
+Key design decisions include:
 
-**Tech:** PHP | MySQL | Bootstrap
+- Dark graphite background.
+- Minimal and clean visual hierarchy.
+- Carefully balanced typography.
+- Electric Blue highlights and interactive elements.
+- Smooth scrolling and section transitions.
+- Subtle hover effects and animations.
+- Responsive layouts.
 
-[View Repository](https://github.com/Rahilshah2234/hostelhub)
+### Typography
 
-### ⚡ Prodexa
-A collaborative project developed as part of InnovaHack 2026, focused on building a practical technology-driven solution.
+The typography system combines:
 
-**Focus:** Software Development | Hackathon | Team Collaboration
+- **Geist** – Primary sans-serif typography.
+- **Geist Mono** – Monospaced typography.
+- **Instrument Serif** – Editorial serif styling and highlights.
 
-[View Repository](https://github.com/Rahilshah2234/Prodexa)
+### Architecture
 
-### 🎵 MoodWave
-An offline mood-based Android music application that provides a personalized music experience.
+The project follows a component-based React architecture.
 
-**Tech:** Kotlin | Jetpack Compose | Media3 | Room
-
-[View Repository](https://github.com/Rahilshah2234/MoodWave-App)
+Each major section and reusable UI element is organized into separate components, making the codebase easier to maintain and extend.
 
 ---
 
-## 📊 GitHub Statistics
+## 📂 Project Structure
+
+```text
+rahil-portfolio/
+│
+├── public/
+│   └── favicon.svg
+│
+├── src/
+│   ├── assets/
+│   │   └── portrait.png
+│   │
+│   ├── components/
+│   │   ├── Certifications.tsx
+│   │   ├── Closing.tsx
+│   │   ├── Cursor.tsx
+│   │   ├── Doors.tsx
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Lamp.tsx
+│   │   ├── Loader.tsx
+│   │   ├── ProjectPage.tsx
+│   │   ├── Story.tsx
+│   │   ├── Toolkit.tsx
+│   │   └── ui.tsx
+│   │
+│   ├── data/
+│   │   └── profile.ts
+│   │
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+Make sure you have installed:
+
+- Node.js
+- npm
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Rahilshah2234/Rahil-Portfolio.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd Rahil-Portfolio
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start Development Server
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal, usually:
+
+```text
+http://localhost:5173
+```
+
+### 5. Build for Production
+
+```bash
+npm run build
+```
+
+The optimized production files will be generated inside the `dist/` directory.
+
+### 6. Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## 📦 Deployment
+
+The project is configured as a Vite application and can be deployed using platforms such as:
+
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+
+### Build Configuration
+
+| Setting | Value |
+|---|---|
+| Framework | Vite |
+| Build Command | `npm run build` |
+| Output Directory | `dist` |
+| Install Command | `npm install` |
+
+---
+
+## 👨‍💻 Author
+
+**Rahil Shah**
+
+B.E. Artificial Intelligence & Data Science  
+K.K. Wagh Institute of Engineering Education & Research, Nashik
+
+- GitHub: [@Rahilshah2234](https://github.com/Rahilshah2234)
+
+---
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Rahilshah2234&show_icons=true&theme=transparent&hide_border=true&title_color=4D8DFF&icon_color=4D8DFF&text_color=8B949E" />
+### Thanks for checking out my portfolio! 
 
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rahilshah2234&layout=compact&theme=transparent&hide_border=true&title_color=4D8DFF&text_color=8B949E" />
+**Designed with curiosity. Built with code.**
 
-</div>
-
----
-
-## 🌐 Beyond the Code
-
-- 🚗 **Automotive Enthusiast** — Passionate about cars and automotive technology.
-- 🎮 **Gaming** — Enjoy gaming and exploring immersive digital experiences.
-- 💡 **Technology Explorer** — Always curious about emerging technologies and innovation.
-
----
-
-## 🤝 Let's Connect
-
-I'm always open to connecting with developers, exploring opportunities, collaborating on projects, and learning from others.
-
-<div align="center">
-
-<a href="https://github.com/Rahilshah2234">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-
-<a href="YOUR_LINKEDIN_URL">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-
-<a href="mailto:YOUR_EMAIL">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-
-<br/><br/>
-
-### Thanks for visiting! ⭐
-
-*Building. Learning. Improving.*
+⭐ If you like this project, consider giving it a star!
 
 </div>
