@@ -8,6 +8,12 @@ A personal portfolio showcasing my projects, technical skills, journey, and expe
 
 <br/>
 
+<a href="https://rahilshah22.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/🌐_VISIT_LIVE_PORTFOLIO-4D8DFF?style=for-the-badge&logoColor=white" />
+</a>
+
+<br/><br/>
+
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-Frontend%20Build-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -28,6 +34,10 @@ This repository contains the source code of my personal developer portfolio webs
 The website is designed to present my technical background, featured projects, skills, and development journey through an interactive and visually engaging experience.
 
 The design follows a modern, minimal, dark aesthetic with smooth animations, interactive elements, and a carefully selected typography system.
+
+🌐 **Live Website:** [rahilshah22.vercel.app](https://rahilshah22.vercel.app/)
+
+---
 
 ## ✨ Features
 
@@ -203,10 +213,7 @@ npm run preview
 
 ## 📦 Deployment
 
-The project is configured as a Vite application and can be deployed using platforms such as:
-
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+The project is deployed using **Vercel** and connected to GitHub for version control and automatic deployments.
 
 ### Build Configuration
 
@@ -216,6 +223,17 @@ The project is configured as a Vite application and can be deployed using platfo
 | Build Command | `npm run build` |
 | Output Directory | `dist` |
 | Install Command | `npm install` |
+| Hosting Platform | Vercel |
+
+### 🌐 Live Deployment
+
+<div align="center">
+
+<a href="https://rahilshah22.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/OPEN_LIVE_WEBSITE-4D8DFF?style=for-the-badge&logo=vercel&logoColor=white" />
+</a>
+
+</div>
 
 ---
 
@@ -227,6 +245,7 @@ B.E. Artificial Intelligence & Data Science
 K.K. Wagh Institute of Engineering Education & Research, Nashik
 
 - GitHub: [@Rahilshah2234](https://github.com/Rahilshah2234)
+- Portfolio: [Live Website](https://rahilshah22.vercel.app/)
 
 ---
 
